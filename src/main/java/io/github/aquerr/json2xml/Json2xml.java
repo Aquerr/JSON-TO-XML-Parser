@@ -7,10 +7,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class json2xml
+public class Json2xml
 {
-    public static final Path INPUT_DIR_PATH = Paths.get(new File("").getAbsolutePath()).resolve("input");
-    public static final Path OUTPUT_DIR_PATH = Paths.get(new File("").getAbsolutePath()).resolve("output");
+    private static final Path INPUT_DIR_PATH = Paths.get(new File("").getAbsolutePath()).resolve("input");
+    private static final Path OUTPUT_DIR_PATH = Paths.get(new File("").getAbsolutePath()).resolve("output");
 
     public static void main(String[] args)
     {
@@ -66,13 +66,9 @@ public class json2xml
                     writer.close();
                 }
             }
-            catch (FileNotFoundException exception)
+            catch (FileNotFoundException | UnsupportedEncodingException exception)
             {
                 exception.printStackTrace();
-            }
-            catch (UnsupportedEncodingException e)
-            {
-                e.printStackTrace();
             }
             catch (IOException e)
             {
