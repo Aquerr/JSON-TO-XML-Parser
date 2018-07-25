@@ -1,12 +1,23 @@
 ## JSON2XML-Parser
 
-JSON2XML-Parser is a program for parsing a .json file to .xml.
+Version: 0.0.3
 
-The program takes all values from JSON file and creates a XML file with tags and attributes (it does not generate values on propose).
+JSON2XML-Parser is a program for parsing JSON files to XML without values.
 
-If you need a Json To Xml parser that instead of creating tag values creates tag attributes then this parser is for you.
+All objects from JSON file are translated to empty XML-tags with attributes.
+
+I couldn't find any parser that converts JSON objects to XML-tags with attributes (instead of tag values) so I simply made my own parser.
 
 ## Usage
 
+1. Run the .jar file once to generate two folders for input and output.
+2. Palce your .json files in input folder and run the .jar file.
+3. Your newly generated xml files should exist in output folder.
+
+## For Developers
+
+After cloning the repository. Open it in your IDE, refresh maven dependencies and run. No extra setup needed.
 
 ## License
+
+GNU GPL
