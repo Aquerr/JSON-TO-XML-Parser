@@ -11,7 +11,7 @@ I couldn't find any parser that converts JSON objects to XML-tags with attribute
 ## Usage
 
 1. Run the .jar file once to generate two folders for input and output.
-2. Palce your .json files in input folder and run the .jar file.
+2. Place your .json files in input folder and run the .jar file.
 3. Your newly generated xml files should exist in output folder.
 
 ## For Developers
@@ -20,4 +20,4 @@ After cloning the repository. Open it in your IDE, refresh maven dependencies an
 
 ## License
 
-GNU GPL
+[MIT](https://github.com/Aquerr/JSON2XML-Parser/blob/master/LICENSE)
